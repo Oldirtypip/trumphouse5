@@ -1,4 +1,88 @@
+/* CSS STYLES FOR TRUMPHOUSE */
 
 body {
-	background-color: green;
+	background-color: #aaccaa;
+}
+
+div {
+	box-sizing: content-box;
+}
+
+#ui-elements {
+	width: 696px;
+
+	color:white;
+	font-size:16px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #666;
+}
+
+#game-canvas {
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	position:relative; 
+	/* assets inside canvas position themselves relative to 
+	the canvas, NOT the entire browser window */
+	background-image: url( '../img/arena/bkgnd_1992.png' );
+	width: 700px;
+	height: 300px;
+}
+
+#white-house {
+	position: absolute;
+	background-image: url( '../img/arena/whitehouse.png' );
+	width: 150px; /* width of background image */
+	height: 300px;  /* same height as game canvas */
+	right: 0; /* position on r.h. side of screen */
+}
+
+.game-character {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-size: 100% 100%;
+}
+
+#trump {
+	background-image: url( '../img/players/trump.png' );
+	top: 125px;
+	left: 0px;
+}
+
+#clinton {
+	background-image: url( '../img/bricks/clinton.png' );
+	top: 0px;
+	left: 500px;	
+}
+
+#cruz {
+	background-image: url( '../img/bricks/cruz.png' );
+	top: 50px;
+	left: 500px;	
+}
+
+#kasich {
+	background-image: url( '../img/bricks/kasich.png' );
+	top: 100px;
+	left: 500px;	
+}
+
+#sanders {
+	background-image: url( '../img/bricks/sanders.png' );
+	top: 150px;
+	left: 500px;	
+}
+
+#johnson {
+	background-image: url( '../img/bricks/johnson.png' );
+	top: 200px;
+	left: 500px;	
+}
+
+#stein {
+	background-image: url( '../img/bricks/stein.png' );
+	top:250px;
+	left: 500px;	
 }

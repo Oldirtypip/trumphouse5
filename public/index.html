@@ -1,52 +1,98 @@
-<Doctype htme>
+
+<!doctype html>
 <html>
 
 	<head>
 
-			<meta charset+"utf-8">
-			<title>Trumphouse - A Game of Moans</title>
+		<meta charset="utf-8">
 
+		<title>Trumphouse - A Game of Moans</title>
 
-			<!-- Css Files -->
+		<!--css files-->
 
-			<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
 
-			<!--JS files used for intitial page render (e,g. bootstrap) -->
+		<!--JS files used for initial page render (e.g. bootstrap)-->
 
 	</head>
 
-<body>
+	<body>
 
-	<header>
-			<h1>Trumphouse - A game of Moans</h1>
+		<header>
 
-	</header>
+			<h1>Trumphouse - A Game of Moans</h1>
 
-	<section id="content">
+		</header>
+
+		<section id="content">
 
 			<h2>Play the Game!</h2>
 
 			<article id="game">
-					<h3>The Game</h3>
-					<p> To play, use your arrow keys to Make the </p>
 
-					<div id="game-canvas">
-					<!--The actual HtmL Dom game goes heer.-->
+				<h3>The Game</h3>
 
-			</article>
+				<p>To play, use your arrow keys to move the Trump, and use the other bozos to smash your way through to the White House!</p>
 
-	</section>
+				<div id="game-canvas">
 
-	<footer>
-		<p> &copy; 2016 Bigger than you.  Rights reserved </p>
-	</footer>
+					<!--trump is NOT a 'brick'-->
+					<div id="trump" class="game-character ball"></div>
 
-	<!--load app.js-->
+					<!--whitehouse (arena) is NOT a 'brick'-->
+					<div id="white-house" class="game-character arena"></div>
 
-	<script src="js/app.js"></script>
-	<script src="js/sandbox.js"></script>
+					<!--all other game characters are 'bricks'-->
+					<div id="clinton" class="game-character bricks"></div>
 
-</body>
+					<div id="cruz" class="game-character bricks"></div>
+
+					<div id="kasich" class="game-character bricks"></div>
+
+					<div id="sanders" class="game-character bricks"></div>
+
+					<div id="stein" class="game-character bricks"></div>
+
+					<div id="johnson" class="game-character bricks"></div>
+
+
+					<!--the actual HTML DOM game goes here.-->
+
+				</div> <!-- End of Game canvas-->
+
+				<form id="ui-elements">
+
+					<span id="controls">Play the Game:</span>
+
+					<button id="start-game">Start</button>
+					<button id="stop-game">Stop</button>
+
+				</form>
+
+			</article> <!-- End of Game canvas and UI element-->
+
+		</section>  
+
+		<footer>
+
+			<h2>Credits</h2>
+
+			<p>&copy; 2016 Vegan Meat Market. All rights reserved.</p>
+
+		</footer>
+		
+		<!--sandbox-->
+
+		<script src="js/sandbox.js"></script>
+
+		<!--load animation library-->
+		<script src="js/animate.js"></script>
+
+		<!--load app JS-->
+
+		<script src="js/app.js"></script>
+
+	</body>
 
 </html>
 
